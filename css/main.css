@@ -56,4 +56,24 @@ html {
 h1 {
   font-size: 60px;
 }
-
+img {
+  background: blue;
+}
+.head {
+  display: none;
+}
+.torso {
+  display: none;
+}
+.leftarm {
+  display: none;
+}
+.rightarm {
+  display: none;
+}
+.leftleg {
+  display: none;
+}
+.rightleg {
+  display: none;
+}

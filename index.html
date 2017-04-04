@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>Pirate Hangman</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="js/main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -16,60 +14,66 @@
     <div class "container"></div>
   </article>
   <div class ="box">
-  <h1>Death to all! Choose a letter to start...arrrg</h1>
+  <h1>Death to all! ...arrrg</h1>
+  <h2 id="message"></h2>
   </div>
-  <div class ="guess">
+  <div class="guess">
   <h2>     </h2>
   </div>
   <div class='col-md-3'>
     <div style='text-align:center;'>
-      <p class ="lead" id ="answer"> _ _ _ _ _ _ </p>
+      <p class="lead" id="answer"></p>
     </div>
     <hr>
-    <div>
-      <h4 id="guesses">x</h4>
-    </div>
   </div>
-  <div id = "letters">
-  <button>A</button>
-  <button>B</button>
-  <button>C</button>
-  <button>D</button>
-  <button>E</button>
-  <button>F</button>
-  <button>G</button>
-  <button>H</button>
-  <button>I</button>
-  <button>J</button>
-  <button>K</button>
-  <button>L</button>
-  <button>M</button>
-  <button>N</button>
-  <button>O</button>
-  <button>P</button>
-  <button>Q</button>
-  <button>R</button>
-  <button>S</button>
-  <button>T</button>
-  <button>U</button>
-  <button>V</button>
-  <button>W</button>
-  <button>X</button>
-  <button>Y</button>
-  <button>Z</button>
+  <div id="letters">
+    <button>A</button>
+    <button>B</button>
+    <button>C</button>
+    <button>D</button>
+    <button>E</button>
+    <button>F</button>
+    <button>G</button>
+    <button>H</button>
+    <button>I</button>
+    <button>J</button>
+    <button>K</button>
+    <button>L</button>
+    <button>M</button>
+    <button>N</button>
+    <button>O</button>
+    <button>P</button>
+    <button>Q</button>
+    <button>R</button>
+    <button>S</button>
+    <button>T</button>
+    <button>U</button>
+    <button>V</button>
+    <button>W</button>
+    <button>X</button>
+    <button>Y</button>
+    <button>Z</button>
+  </div>
+  <aside>
+    <img src ="http://i.imgur.com/RiST3sn.jpg"></img>
+  </aside>
+  <footer>
+    <div id="wrapper">
+      <button id="reset">Reset Game</button>
+    </div>
+  </footer>
+<div>
+  <img src = "image" class = "head">
+  <img src = "image" class = "torso">
+  <img src = "image" class = "leftarm">
+  <img src = "image" class = "rightarm">
+  <img src = "image" class = "leftleg">
+  <img src = "image" class = "rightleg">
   </div>
   <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
-<aside>
-  <img src ="http://i.imgur.com/RiST3sn.jpg"></img>
-</aside>
-<footer>
-  <div id="wrapper">
-    <button id="reset">Reset Game</button>
-  </div>
-</footer>
-
 </html>

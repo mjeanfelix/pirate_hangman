@@ -1,7 +1,8 @@
 /*-- global variables --*/
 
-var pirateWordArr = ['parrot','anchor', 'sailor', 'swords', 'silver'];
+var pirateWords = ['PARROT','ANCHOR', 'SAILOR', 'SWORDS', 'SILVER'];
 var pirateWord;
+var pirateWordArr;
 var guess;
 var badGuesses;
 var message;
@@ -9,7 +10,11 @@ var message;
 /*-- event listeners --*/
 
 $('#letters').on('click', 'button', handleClick);
-$('#answer').on('click', 'button', handleClick);
+
+/*-- cached elements --*/
+
+var $answerDisplay = $('#answer');
+var $messageDisplay = $('#message');
 
 /*-- functions --*/
 
@@ -30,46 +35,34 @@ function handleClick(evt) {
 }
 
 function render() {
-  pirateWord.indexOf(guess) {
-    if true
-  }
-
+  $answerDisplay.html(guess);
+  $messageDisplay.html(message);
 }
 
 function replaceUnderscores(letter) {
-
+  var guessArr = guess.split("");
+  // loop through pirateWord looking for the letter
+  // if found, update guess with the letter in the pos found
+  pirateWordArr.forEach(function(char, idx) {
+    if (char === letter) guessArr[idx] = letter;
+  });
+  guess = guessArr.join("");
 }
 
-
 function startGame() {
-  pirateWord = pirateWordArr[Math.floor(Math.random() * pirateWordArr.length)];
+  pirateWord = pirateWords[Math.floor(Math.random() * pirateWords.length)];
+  pirateWordArr = pirateWord.split("");
   badGuesses = [];
+  message = "";
   guess = "";
   for (var i = 0; i < pirateWord.length; i++) {
     guess = guess + "_";
   }
-
-
-
-  // for(var i = 0; i <pirateWord.length; i++) {
-  //   answerArray[i] = "_";
-  // }
-  // x = answerArray.join(" ");
-  // document.getElementById("answer").innerhtml = x;
+  render();
 }
 
-function letter() {
-  var letter = document.getElementById("letter").value;
-  if (letter.length>0) {
-    for (var i = 0; i <pirateWord.length; i++) {
-      if (pirateWord[1] ===letter) {
-        answerArray[i] = letter;
-      }
-    }
-  }
-  count++
-  document.getElementById("counter").innerhtml = "Num of clicks: "+ count;
-  document.getElementById("answer").innerhtml = answerArray.join [" "];
+function resetGame() {
+  $resetGame.html(reset);
 }
 
 startGame();
