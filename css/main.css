@@ -1,0 +1,57 @@
+div.container {
+  height: 600px;
+  width: 600px;
+  font-family: 'Macondo', cursive;
+}
+div.box {
+  height: 40px
+  width: 20px;
+  margin: 60px;
+  color: darkblue;
+  background-color: khaki;
+  content: 800px 600px;
+  font-family: 'Macondo', cursive;
+  display: inline;
+}
+div.guess {
+  margin-top: 60px;
+  margin-right: 40px;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  font-family: 'Macondo', cursive;
+}
+div {
+   margin-top: 10px;
+   margin-right: 5px;
+   margin-bottom: 15px;
+   margin-left: 25px;
+}
+aside {
+  height: 90px;
+  width: 90px;
+  margin: 40px 40px 40px 40px;
+  font-family: 'Macondo', cursive;
+}
+ body {
+  background-color: gray;
+  background: url(http://i.imgur.com/ilVKmnA.jpg);
+  font-family: 'Macondo', cursive;
+ }
+ #answer {
+  font-size: 60px;
+  color: white;
+ }
+.reset {
+  background: gray;
+}
+button {
+  color: black;
+  background: khaki;
+}
+html {
+  background: url(http://i.imgur.com/ilVKmnA.jpg);
+  font-family: 'Macondo', cursive;
+}
+h1 {
+  font-size: 60px;
+}
