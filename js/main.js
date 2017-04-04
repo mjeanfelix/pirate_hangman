@@ -1,74 +1,75 @@
+/*-- global variables --*/
 
 var pirateWordArr = ['parrot','anchor', 'sailor', 'swords', 'silver'];
-console.log(pirateWordArr);
+var pirateWord;
+var guess;
+var badGuesses;
+var message;
 
-var pirateWord = pirateWordArr[Math.floor(Math.random() + pirateWordArr.length)];
-console.log(pirateWord);
-/*var x;
-var count = 0;
-var answerArray = [];*/
+/*-- event listeners --*/
 
-function wordsToUnderscore(word) {
-    var underscores = "";
-    for (var i = word.length +1; i >= 0; i++) {
-      word[1]
-    }
-};
-console.log(wordsToUnderscore);
+$('#letters').on('click', 'button', handleClick);
+$('#answer').on('click', 'button', handleClick);
 
-function renderUnderscores(str){
-  document.querySelector(".guess").innerHTML = str
-}
-function isOneInArray(pirateWordArr) {
-  for (let index = 0; index < pirateWordArr.length; index++) {
-    let currentItem = array[index];
-    if (currentItem === 1) {
-      return true;
-      console.log(isOneInArray);
-    }
+/*-- functions --*/
+
+function handleClick(evt) {
+  var letter = this.textContent;
+  if (pirateWord.includes(letter)) {
+    replaceUnderscores(letter);
+    // replace all occurances of letter in the guess in the correct pos
+  } else {
+    badGuesses.push(letter);
   }
-  return false;
-}
-
-/*var btn = document.querySelector('button');
-btn.addEventListener('click', function(evt) {
-  console.log(evt);
-});
-*/
-$('#answer').on('click', 'button', function(){
-  console.log(this);
-})
-/*
-function blanksFromAnswer (answerWord) {
-
-    var result = " ";
-    for ( i in answerWord) {
-        result = "_" + result;
-    }
-    return result;
-}
-
-function start() {
-  for(var i = 0; i <pirateWord.length; i++) {
-    answerArray[i] = "_";
+  if (guess === pirateWord) {
+    message = "You win!";
+  } else if (badGuesses.length === 6) {
+    message = "You're pirate hanged!";
   }
-  x = answerArray.join(" ");
-  document.getElementById("answer").innerhtml = x;
+  render();
+}
+
+function render() {
+  pirateWord.indexOf(guess) {
+    if true
+  }
+
+}
+
+function replaceUnderscores(letter) {
+
+}
+
+
+function startGame() {
+  pirateWord = pirateWordArr[Math.floor(Math.random() * pirateWordArr.length)];
+  badGuesses = [];
+  guess = "";
+  for (var i = 0; i < pirateWord.length; i++) {
+    guess = guess + "_";
+  }
+
+
+
+  // for(var i = 0; i <pirateWord.length; i++) {
+  //   answerArray[i] = "_";
+  // }
+  // x = answerArray.join(" ");
+  // document.getElementById("answer").innerhtml = x;
 }
 
 function letter() {
   var letter = document.getElementById("letter").value;
-  if (letter.length>0)
-{
-  for (var i = 0; i <pirateWord.length; i++) {
-    if (pirateWord[1] ===letter)
-
-      answerArray[i] = letter;
+  if (letter.length>0) {
+    for (var i = 0; i <pirateWord.length; i++) {
+      if (pirateWord[1] ===letter) {
+        answerArray[i] = letter;
+      }
     }
   }
+  count++
+  document.getElementById("counter").innerhtml = "Num of clicks: "+ count;
+  document.getElementById("answer").innerhtml = answerArray.join [" "];
+}
 
-    count++
-    document.getElementById("counter").innerhtml = "Num of clicks: "+ count;
-    document.getElementById("answer").innerhtml = answerArray.join [" "];
-  }
-*/
+startGame();

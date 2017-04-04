@@ -34,7 +34,7 @@ aside {
 }
  body {
   background-color: gray;
-  background: url(http://i.imgur.com/ilVKmnA.jpg);
+  background: url(http://i.imgur.com/gG8ZfRc.png);
   font-family: 'Macondo', cursive;
  }
  #answer {
@@ -47,6 +47,7 @@ aside {
 button {
   color: black;
   background: khaki;
+  display: inline;
 }
 html {
   background: url(http://i.imgur.com/ilVKmnA.jpg);
@@ -55,3 +56,4 @@ html {
 h1 {
   font-size: 60px;
 }
+
