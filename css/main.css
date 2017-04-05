@@ -7,7 +7,7 @@ div.box {
   height: 40px
   width: 20px;
   margin: 60px;
-  color: white;
+  color: darkbrown;
   background-color: khaki;
   content: 800px 600px;
   font-family: 'Macondo', cursive;
@@ -34,12 +34,12 @@ aside {
 }
  body {
   background-color: gray;
-  background: url(http://i.imgur.com/gG8ZfRc.png);
+  background: url(http://i.imgur.com/ErWYaXb.jpg);
   font-family: 'Macondo', cursive;
  }
  #answer {
   font-size: 60px;
-  color: white;
+  color: darkbrown;
  }
 .reset {
   background: gray;
@@ -50,14 +50,23 @@ button {
   display: inline;
 }
 html {
-  background: url(http://i.imgur.com/ilVKmnA.jpg);
   font-family: 'Macondo', cursive;
 }
 h1 {
   font-size: 60px;
 }
+h2 {
+  height: 30px;
+  width: 60px;
+  color: red;
+  font-size: 100px;
+}
 img {
-  background: blue;
+  /*background: url(http://i.imgur.com/xDPADDN.jpg);*/
+}
+#hangman {
+  height: 300px;
+  width: 240px;
 }
 /* possible option for image reveal
 .head {

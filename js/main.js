@@ -1,10 +1,14 @@
 /*-- global variables --*/
 
-var pirateWords = ['PARROT','ANCHOR', 'SAILOR', 'SWORDS', 'SILVER'];
+var pirateWords = ['PARROT','ANCHOR', 'SAILOR', 'SWORDS', 'SILVER', 'BOOTIE', 'GOLD', 'MUTINY', 'CAPTAIN', "PIDGIN"];
 var images = [
-  "http://i.imgur.com/RiST3sn.jpg",
-  "http://i.imgur.com/WhhraoA.jpg",
-  "http://i.imgur.com/DKZhadx.png",
+  "http://i.imgur.com/VBf2ebg.png",
+  "http://i.imgur.com/l4mYJ7W.png",
+  "http://i.imgur.com/uT1K8cA.png",
+  "http://i.imgur.com/Lv8SaO4.png",
+  "http://i.imgur.com/AjsvPMs.png",
+  "http://i.imgur.com/vR7apNq.png",
+  "http://i.imgur.com/wObF8tw.png"
 ];
 var pirateWord;
 var pirateWordArr;
@@ -64,10 +68,6 @@ function replaceUnderscores(letter) {
 //   if (badGuesses.length === 1)
 //   return $(.head).css('display', 'inline-block');
 // } else  {
-
-
-
-
 
 function startGame() {
   pirateWord = pirateWords[Math.floor(Math.random() * pirateWords.length)];
