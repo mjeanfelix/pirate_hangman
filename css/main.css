@@ -7,7 +7,7 @@ div.box {
   height: 40px
   width: 20px;
   margin: 60px;
-  color: darkblue;
+  color: white;
   background-color: khaki;
   content: 800px 600px;
   font-family: 'Macondo', cursive;
@@ -59,6 +59,7 @@ h1 {
 img {
   background: blue;
 }
+/* possible option for image reveal
 .head {
   display: none;
 }
@@ -77,3 +78,4 @@ img {
 .rightleg {
   display: none;
 }
+*/
