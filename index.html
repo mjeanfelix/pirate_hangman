@@ -9,57 +9,51 @@
 </head>
 <body>
 
-  <h1>Pirate Hangman!</h1>
+  <h1 class="red-text-shadow">Pirate Hangman!</h1>
   <article>
     <div class "container"></div>
   </article>
   <div class="box">
-  <h1>Choose a letter in this pirate themed word...arrrg!</h1>
-  <h2 id="message"></h2>
+    <h2 class="red-text-shadow">Choose a letter in this pirate themed word...arrrg!</h2>
+    <h3 id="message"></h3>
   </div>
   <div class="guess">
   </div>
-  <div class='col-md-3'>
-    <div style='text-align:center;'>
+  <div id="buffer">
+    <div class="panel">
       <p class="lead" id="answer"></p>
+      <div id="letters">
+        <button>A</button>
+        <button>B</button>
+        <button>C</button>
+        <button>D</button>
+        <button>E</button>
+        <button>F</button>
+        <button>G</button>
+        <button>H</button>
+        <button>I</button>
+        <button>J</button>
+        <button>K</button>
+        <button>L</button>
+        <button>M</button>
+        <button>N</button>
+        <button>O</button>
+        <button>P</button>
+        <button>Q</button>
+        <button>R</button>
+        <button>S</button>
+        <button>T</button>
+        <button>U</button>
+        <button>V</button>
+        <button>W</button>
+        <button>X</button>
+        <button>Y</button>
+        <button>Z</button>
+      </div>
+      <button id="reset">Reset Game</button><br>
+      <img id="hangman" src="">
     </div>
   </div>
-  <div id="letters">
-    <button>A</button>
-    <button>B</button>
-    <button>C</button>
-    <button>D</button>
-    <button>E</button>
-    <button>F</button>
-    <button>G</button>
-    <button>H</button>
-    <button>I</button>
-    <button>J</button>
-    <button>K</button>
-    <button>L</button>
-    <button>M</button>
-    <button>N</button>
-    <button>O</button>
-    <button>P</button>
-    <button>Q</button>
-    <button>R</button>
-    <button>S</button>
-    <button>T</button>
-    <button>U</button>
-    <button>V</button>
-    <button>W</button>
-    <button>X</button>
-    <button>Y</button>
-    <button>Z</button>
-  </div>
-  <footer>
-    <div id="wrapper">
-      <button id="reset">Reset Game</button>
-    </div>
-  </footer>
-<div>
-  <img id="hangman" src="">
-</div>
   <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

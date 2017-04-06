@@ -44,9 +44,24 @@ function handleClick(evt) {
   }
   render();
 }
-
+/*
+function alert() {
+  if (badGuesses === 6) {
+    $('#alert').css('display': 'inline-block');
+  }
+}
+*/
 function render() {
-  $answerDisplay.html(guess);
+  if (badGuesses.length === 6) {
+    $('body').css('background', 'url(http://i.imgur.com/xDPADDN.jpg)');/* grabs the NEW background image from the html*/
+    $answerDisplay.hide();/* hides the answer display if bg===6*/
+    $('#letters').hide();/*hides the alphabet if bg==6*/
+  } else {
+    $answerDisplay.html(guess);
+  }
+  if (guess === pirateWord) {
+    $('#letters').hide();/*hides alpha when correct guess is made forcing user to reset*/
+  }
   $messageDisplay.html(message); //display 'you win or yr hanged' message
   $hangman.attr('src', images[badGuesses.length]); //takes the hangman add the attribute to image source
 }//badGuess length index for the images so you go from one image to the next
@@ -78,6 +93,10 @@ function startGame() {
   for (var i = 0; i < pirateWord.length; i++) {
     guess = guess + "_";//add an empty underscore to the pirateWord, iterates through out the word until they are all empty underscores//
   }
+  $answerDisplay.show();/*resets the answerdisplay at game start*/
+  $('#letters').show();/*resets the alphabet at game start*/
+  $('body').css('background', 'url(http://i.imgur.com/ErWYaXb.jpg)');/*resets alpha at game start*/
+
   render();
 }
 

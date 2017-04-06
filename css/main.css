@@ -38,11 +38,13 @@ aside {
   font-family: 'Macondo', cursive;
  }
  #answer {
-  font-size: 60px;
+  font-size: 80px;
+  font-weight: bold;
   color: darkbrown;
  }
 .reset {
   background: gray;
+  margin-top: 60px;
 }
 button {
   color: black;
@@ -52,39 +54,40 @@ button {
 html {
   font-family: 'Macondo', cursive;
 }
+.red-text-shadow {
+   text-shadow: red 0 -2px;
+}
 h1 {
-  font-size: 60px;
+  color: black;
+  text-align: center;
 }
 h2 {
+  font-size: 60px;
+  text-align: center;
+}
+#message {
   height: 30px;
   width: 60px;
   color: red;
   font-size: 100px;
+  margin-left: 30px;
 }
 img {
   /*background: url(http://i.imgur.com/xDPADDN.jpg);*/
 }
+.panel {
+  text-align: center;
+  margin-top: -150px;
+  background-color: transparent;
+}
 #hangman {
+  margin-top: 20px;
   height: 300px;
   width: 240px;
 }
-/* possible option for image reveal
-.head {
-  display: none;
+#buffer{
+  margin-top: 100px;
 }
-.torso {
-  display: none;
-}
-.leftarm {
-  display: none;
-}
-.rightarm {
-  display: none;
-}
-.leftleg {
-  display: none;
-}
-.rightleg {
-  display: none;
-}
-*/
+
+
+
