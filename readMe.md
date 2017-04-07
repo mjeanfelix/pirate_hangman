@@ -8,7 +8,8 @@ Read Me file:
 *Objective:*<br>Create a pirate themed hangman game, using HTML, CSS and Javascript.
 
 User guesses the letters of a word. For every incorrect guess the image of a man in a noose appears. After six incorrect guesses the full image appears and the user loses. 
-For each correct guess a letter appears in the empty spaces.
+For each correct guess a letter appears in the empty spaces., accompanied by a series of images to show the hangman.
+
 
 #Technologies Used
 - Html
