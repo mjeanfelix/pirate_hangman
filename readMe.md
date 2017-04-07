@@ -23,7 +23,8 @@ For each correct guess a letter appears in the empty spaces.
 ---
 
 Here is a link to Militza's Pirate Themed Hangman Game:
-file:///Users/mjean_9/code/pirate_hangman/index.html
+
+[https://mjeanfelix.github.io/pirate_hangman/]()
 
 
 

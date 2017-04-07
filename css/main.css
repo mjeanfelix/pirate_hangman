@@ -7,7 +7,7 @@ div.box {
   height: 40px
   width: 20px;
   margin: 60px;
-  color: darkbrown;
+  color: blue;
   background-color: khaki;
   content: 800px 600px;
   font-family: 'Macondo', cursive;
@@ -58,7 +58,7 @@ html {
    text-shadow: red 0 -2px;
 }
 h1 {
-  color: black;
+  color: blue;
   text-align: center;
 }
 h2 {
@@ -72,9 +72,7 @@ h2 {
   font-size: 100px;
   margin-left: 30px;
 }
-img {
-  /*background: url(http://i.imgur.com/xDPADDN.jpg);*/
-}
+
 .panel {
   text-align: center;
   margin-top: -150px;
